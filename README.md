@@ -1,5 +1,5 @@
 # TESTE DE BACK-END
-O teste de back-end da Be mobile consiste em estruturar uma API RESTful em Node.js (Adonis, Koa ou Express) ou PHP (Laravel) e um banco de dados ligado a esta API.
+O teste de back-end da Be mobile consiste em estruturar uma API RESTful e um banco de dados ligado a esta API. Trate-se de um sistema que permite cadastrar usuários externamente e, ao realizarem login, poderão registrar clientes, produtos e vendas. O(a) candidato(a) poderá escolher desenvolver em Node.js (Adonis, Koa ou Express) ou PHP (Laravel).
 
 # Banco de dados
 O banco de dados deve ser estruturado à escolha do(a) candidato(a), mas minimamente deverá conter o seguinte:
