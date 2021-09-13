@@ -35,7 +35,7 @@ O banco de dados deve ser estruturado à escolha do(a) candidato(a), mas minimam
 Obs: as rotas em clientes, produtos e vendas só podem ser acessadas por usuário logado.
 
 # Requisitos
-- estruturar o sistema observando o MVC;
+- estruturar o sistema observando o MVC (mas sem as views);
 - deve usar mySQL no banco de dados;
 - as respostas devem ser em JSON;
 - pode usar recursos / bibliotecas que auxiliam na administração do banco de dados (Eloquent, Lucid, Knex, Bookshelf, etc.);
