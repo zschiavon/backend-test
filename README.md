@@ -1,7 +1,7 @@
-# TESTE DE BACK-END
+# Be mobile - Teste de Back-end
 O teste de back-end da Be mobile consiste em estruturar uma API RESTful e um banco de dados ligado a esta API. Trate-se de um sistema que permite cadastrar usuários externamente e, ao realizarem login, poderão registrar clientes, produtos e vendas. O(a) candidato(a) poderá escolher desenvolver em Node.js (Adonis, Koa ou Express) ou PHP (Laravel).
 
-# Banco de dados
+## Banco de Dados
 O banco de dados deve ser estruturado à escolha do(a) candidato(a), mas minimamente deverá conter o seguinte:
 - usuários: email, senha;
 - clientes: nome, cpf;
@@ -10,7 +10,7 @@ O banco de dados deve ser estruturado à escolha do(a) candidato(a), mas minimam
 - produtos: colocar os dados necessários para um tipo de produto (livros), além de preço.
 - vendas: cliente, produto, quantidade, preço unitário, preço total, data e hora.
 
-# Rotas do sistema
+## Rotas do Sistema
 - cadastro de usuário do sistema (signup)
 - login com JWT de usuário cadastrado (login)
 - clientes:
@@ -36,7 +36,7 @@ O banco de dados deve ser estruturado à escolha do(a) candidato(a), mas minimam
 
 Obs: as rotas em clientes, produtos e vendas só podem ser acessadas por usuário logado.
 
-# Requisitos
+## Requisitos
 - estruturar o sistema observando o MVC (mas sem as views);
 - deve usar mySQL no banco de dados;
 - as respostas devem ser em JSON;
@@ -46,7 +46,7 @@ Obs: as rotas em clientes, produtos e vendas só podem ser acessadas por usuári
 
 Obs: caso o(a) candidato(a) não consiga completar o teste até o prazo combinado com o avaliador, deve garantir que tudo que foi efetivamente feito esteja em pleno funcionamento. Relatar no README quais foram as dificuldades encontradas.
 
-# Pontos de avaliação
+## Critérios de Avaliação
 - lógica de programação;
 - organização do projeto;
 - legibilidade do código;
