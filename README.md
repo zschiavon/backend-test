@@ -5,7 +5,7 @@ O teste de back-end da Be mobile consiste em estruturar uma API RESTful e um ban
 O banco de dados deve ser estruturado à escolha do(a) candidato(a), mas minimamente deverá conter o seguinte:
 - usuários: email, senha;
 - clientes: nome, cpf;
-- endereço completo: todos os campos de endereço;
+- endereço: todos os campos de endereço;
 - telefones: cliente, número;
 - produtos: colocar os dados necessários para um tipo de produto (livros), além de preço.
 - vendas: cliente, produto, quantidade, preço unitário, preço total, data e hora.
@@ -40,9 +40,9 @@ Obs: as rotas em clientes, produtos e vendas só podem ser acessadas por usuári
 - estruturar o sistema observando o MVC (mas sem as views);
 - deve usar mySQL no banco de dados;
 - as respostas devem ser em JSON;
-- pode usar recursos / bibliotecas que auxiliam na administração do banco de dados (Eloquent, Lucid, Knex, Bookshelf, etc.);
+- pode usar recursos e bibliotecas que auxiliam na administração do banco de dados (Eloquent, Lucid, Knex, Bookshelf, etc.);
 - documentar as instruções necessárias em um README (requisitos, como rodar, detalhamento de rotas);
-- fazer um pull request para este repositório ao finalizar.
+- fazer um Pull Request para este repositório ao finalizar.
 
 Obs: caso o(a) candidato(a) não consiga completar o teste até o prazo combinado com o avaliador, deve garantir que tudo que foi efetivamente feito esteja em pleno funcionamento. Relatar no README quais foram as dificuldades encontradas.
 
