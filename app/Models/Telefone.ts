@@ -1,5 +1,6 @@
 import { DateTime } from 'luxon'
-import { BaseModel, column } from '@ioc:Adonis/Lucid/Orm'
+import { BaseModel, belongsTo, BelongsTo, column } from '@ioc:Adonis/Lucid/Orm'
+import Cliente from './Cliente'
 
 export default class Telefone extends BaseModel {
   @column({ isPrimary: true })
@@ -16,4 +17,7 @@ export default class Telefone extends BaseModel {
 
   @column.dateTime({ autoCreate: true, autoUpdate: true })
   public updatedAt: DateTime
+
+  @belongsTo(() => Cliente)
+  public cliente: BelongsTo<typeof Cliente>
 }
