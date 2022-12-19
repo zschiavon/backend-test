@@ -18,11 +18,31 @@
 |
 */
 
+
 import Route from '@ioc:Adonis/Core/Route'
 
-Route.group(() =>{
+Route.group(() => {
+  Route.post('/', 'UsuariosController.store')
+  Route.post('/login', 'UsuariosController.login')
+}).prefix('usuario')
 
-  Route.get('/')
-  
-}).prefix('/api')
+Route.group(() => {
+  Route.get('/', 'ClientesController.index')
+  Route.post('/', 'ClientesController.store')
+
+  Route.get('/:id/:mes?/:ano?', 'ClientesController.show')
+  Route.put('/:id', 'ClientesController.update')
+  Route.delete('/:id', 'ClientesController.destroy')
+}).prefix('cliente').middleware('auth')
+
+Route.group(() => {
+  Route.get('/', 'LivrosController.index')
+  Route.post('/', 'LivrosController.store')
+
+  Route.get('/:id', 'LivrosController.show')
+  Route.put('/:id', 'LivrosController.update')
+  Route.delete('/:id', 'LivrosController.destroy')
+}).prefix('livro').middleware('auth')
+
+Route.post('venda', 'VendasController.store').middleware('auth')
 
