@@ -9,6 +9,12 @@ export default class Venda extends BaseModel {
 
   @column({})
   public precoUnitario: number
+  
+  @column({})
+  public clienteId: number
+  
+  @column({})
+  public livroId: number
 
   @column({})
   public precoTotal: number
