@@ -6,11 +6,12 @@ export default class extends BaseSchema {
   public async up () {
     this.schema.createTable(this.tableName, (table) => {
       table.increments('id').primary()
-      table.string('isbn').notNullable().unique()
+      table.string('isbn', 13).notNullable().unique()
       table.string('titulo', 100 ).notNullable()      
-      table.integer('editora', 60).notNullable()
+      table.string('editora', 60).notNullable()
       table.decimal('preco', 10, 2)
-      table.smallint('ano') 
+      table.smallint('ano')
+      table.boolean('ativo').defaultTo(1).notNullable() 
       table.timestamp('created_at', { useTz: true })
       table.timestamp('updated_at', { useTz: true })
     })
